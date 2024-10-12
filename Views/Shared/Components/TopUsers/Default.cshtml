@@ -1,0 +1,9 @@
+﻿@model IEnumerable<User>
+
+<h3>Top 10 Users</h3>
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user.Username: @user.Score</li>
+    }
+</ul>
